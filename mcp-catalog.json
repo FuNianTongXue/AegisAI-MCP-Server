@@ -1,20 +1,18 @@
 {
   "project": "AegisAI-MCP Server",
-  "snapshot_date": "2026-09-03",
-  "metric": "LobeHub Installs",
-  "metric_note": "Market installation count shown on the LobeHub detail page; not equivalent to GitHub or npm downloads.",
+  "scope": ["chat-communication", "information-security", "report-generation", "code-detection"],
   "records": [
-    {"name":"Teams MCP Server","topics":["chat-communication"],"installs":76,"version":"0.23.1","connection_type":"local","lobehub":"https://lobehub.com/mcp/m0nkmaster-msteams-mcp","upstream":"https://github.com/m0nkmaster/msteams-mcp"},
-    {"name":"Code Auditor","topics":["code-detection"],"installs":157,"version":"1.0.0","connection_type":"local","lobehub":"https://lobehub.com/mcp/code-auditor-code-auditor","upstream":"https://github.com/BenAHammond/code-auditor-mcp"},
-    {"name":"Actionlint MCP","topics":["code-detection"],"installs":47,"version":"1.0.0","connection_type":"local","lobehub":"https://lobehub.com/mcp/hongkongkiwi-actionlint-mcp","upstream":"https://github.com/hongkongkiwi/actionlint-mcp"},
-    {"name":"Code Review MCP — Cursor-first PR reviewer","topics":["code-detection","report-generation"],"installs":46,"version":"1.0.0","connection_type":"local","lobehub":"https://lobehub.com/mcp/shadabbi-code-review-mcp","upstream":"https://github.com/shadabbi/code-review-mcp"},
-    {"name":"Messages.app MCP Server","topics":["chat-communication"],"installs":25,"version":"2.0.1","connection_type":"local","lobehub":"https://lobehub.com/mcp/baphomet480-messages-app-mcp","upstream":"https://github.com/Baphomet480/messages-app-mcp"},
-    {"name":"MCP Vulnerability Reporting","topics":["information-security","report-generation"],"installs":8,"version":"0.1.0","connection_type":"local","lobehub":"https://lobehub.com/mcp/badchars-mcp-vulnerability-reporting","upstream":"https://github.com/badchars/mcp-vulnerability-reporting"},
-    {"name":"Google Chat MCP","topics":["chat-communication"],"installs":7,"version":"1.0.0","connection_type":"hybrid","lobehub":"https://lobehub.com/mcp/nguyenvanduocit-google-chat-mcp","upstream":"https://github.com/nguyenvanduocit/google-chat-mcp"},
-    {"name":"AutoPentest","topics":["information-security"],"installs":7,"version":"1.0.0","connection_type":"local","lobehub":"https://lobehub.com/mcp/bhavsec-autopentest-ai","upstream":"https://github.com/bhavsec/autopentest-ai"},
-    {"name":"Report Builder MCP Server","topics":["report-generation"],"installs":6,"version":"1.0.0","connection_type":"remote","lobehub":"https://lobehub.com/mcp/nathanwolfe2208-mcp","upstream":"https://github.com/nathanwolfe2208/mcp"},
-    {"name":"Vulnerable MCP Server","topics":["information-security"],"installs":6,"version":"1.0.0","connection_type":"hybrid","lobehub":"https://lobehub.com/mcp/integsec-vulnerable-mcp-server","upstream":"https://github.com/integsec/VulnerableMCP"},
-    {"name":"Penetration Testing MCP Server","topics":["information-security"],"installs":5,"version":"2.0.0","connection_type":"local","lobehub":"https://lobehub.com/mcp/dr-yato-pentest-mcp-server","upstream":"https://github.com/Dr-yato/pentest-mcp-server"},
-    {"name":"whatsapp-mcp-server","topics":["chat-communication"],"installs":2,"version":"1.0.0","connection_type":"hybrid","lobehub":"https://lobehub.com/mcp/jochem-van-appeldoorn-whatsapp-mcp-server","upstream":"https://github.com/Jochem-van-Appeldoorn/whatsapp-mcp-server"}
+    {"name":"Teams MCP Server","topics":["chat-communication"],"version":"0.23.1","connection_type":"local","upstream":"https://github.com/m0nkmaster/msteams-mcp"},
+    {"name":"Messages.app MCP Server","topics":["chat-communication"],"version":"2.0.1","connection_type":"local","upstream":"https://github.com/Baphomet480/messages-app-mcp"},
+    {"name":"Google Chat MCP","topics":["chat-communication"],"version":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/nguyenvanduocit/google-chat-mcp"},
+    {"name":"whatsapp-mcp-server","topics":["chat-communication"],"version":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/Jochem-van-Appeldoorn/whatsapp-mcp-server"},
+    {"name":"AutoPentest","topics":["information-security"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/bhavsec/autopentest-ai"},
+    {"name":"Vulnerable MCP Server","topics":["information-security"],"version":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/integsec/VulnerableMCP"},
+    {"name":"Penetration Testing MCP Server","topics":["information-security"],"version":"2.0.0","connection_type":"local","upstream":"https://github.com/Dr-yato/pentest-mcp-server"},
+    {"name":"Report Builder MCP Server","topics":["report-generation"],"version":"1.0.0","connection_type":"remote","upstream":"https://github.com/nathanwolfe2208/mcp"},
+    {"name":"MCP Vulnerability Reporting","topics":["information-security","report-generation"],"version":"0.1.0","connection_type":"local","upstream":"https://github.com/badchars/mcp-vulnerability-reporting"},
+    {"name":"Code Auditor","topics":["code-detection"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/BenAHammond/code-auditor-mcp"},
+    {"name":"Actionlint MCP","topics":["code-detection"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/hongkongkiwi/actionlint-mcp"},
+    {"name":"Code Review MCP — Cursor-first PR reviewer","topics":["code-detection","report-generation"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/shadabbi/code-review-mcp"}
   ]
 }
