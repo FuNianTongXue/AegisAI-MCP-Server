@@ -52,5 +52,4 @@
 
 ---
 
-作者：**Manus AI**  
 项目名称：**AegisAI-MCP Server**
