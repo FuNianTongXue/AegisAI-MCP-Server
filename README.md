@@ -48,7 +48,7 @@
 
 ## 数据文件
 
-`data/mcp-catalog.csv` 保存可筛选的结构化目录；`data/mcp-catalog.json` 保存相同记录及审查字段，便于后续自动更新。`docs/methodology.md` 说明采集口径、限制与更新建议。
+`mcp-catalog.csv` 保存可筛选的结构化目录；`mcp-catalog.json` 保存相同记录及审查字段，便于后续自动更新；`methodology.md` 说明采集口径、限制与更新建议。
 
 ## References
 
