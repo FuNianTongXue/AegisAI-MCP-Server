@@ -1,6 +1,6 @@
 {
   "project": "AegisAI-MCP Server",
-  "scope": ["chat-communication", "information-security", "report-generation", "code-detection", "ios-simulator", "android-emulator", "threat-intelligence"],
+  "scope": ["chat-communication", "information-security", "report-generation", "code-detection", "ios-simulator", "android-emulator", "threat-intelligence", "reverse-engineering", "compliance-detection", "android-security", "ios-security"],
   "records": [
     {"name":"Teams MCP Server","topics":["chat-communication"],"version_or_requirement":"0.23.1","connection_type":"local","upstream":"https://github.com/m0nkmaster/msteams-mcp"},
     {"name":"Messages.app MCP Server","topics":["chat-communication"],"version_or_requirement":"2.0.1","connection_type":"local","upstream":"https://github.com/Baphomet480/messages-app-mcp"},
@@ -20,6 +20,13 @@
     {"name":"Android MCP Server","topics":["android-emulator"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/martingeidobler/android-mcp-server"},
     {"name":"Google Threat Intelligence MCP","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/google/mcp-security"},
     {"name":"OpenCTI MCP Server","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/zxzinn/opencti-mcp"},
-    {"name":"FastMCP Threat Intelligence","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/4R9UN/fastmcp-threatintel"}
+    {"name":"FastMCP Threat Intelligence","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/4R9UN/fastmcp-threatintel"},
+    {"name":"Ghidra MCP Server","topics":["reverse-engineering"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/bethington/ghidra-mcp"},
+    {"name":"ReVa - Reverse Engineering Assistant","topics":["reverse-engineering"],"version_or_requirement":"7.3.1","connection_type":"local","upstream":"https://github.com/cyberkaida/reverse-engineering-assistant"},
+    {"name":"APKTool MCP Server","topics":["reverse-engineering","android-security"],"version_or_requirement":"3.0.0","connection_type":"local","upstream":"https://github.com/zinja-coder/apktool-mcp-server"},
+    {"name":"MCP Server Audit","topics":["compliance-detection","information-security"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/ModelContextProtocol-Security/mcpserver-audit"},
+    {"name":"MCP Security Scanner","topics":["compliance-detection","code-detection"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/aws-samples/sample-mcp-security-scanner"},
+    {"name":"MobSF-MCP","topics":["android-security","ios-security"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/nkcc-apk/MobSF-MCP"},
+    {"name":"Mobile Security MCP","topics":["android-security","ios-security"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/Serhatcck/mobile-security-mcp"}
   ]
 }
