@@ -1,18 +1,25 @@
 {
   "project": "AegisAI-MCP Server",
-  "scope": ["chat-communication", "information-security", "report-generation", "code-detection"],
+  "scope": ["chat-communication", "information-security", "report-generation", "code-detection", "ios-simulator", "android-emulator", "threat-intelligence"],
   "records": [
-    {"name":"Teams MCP Server","topics":["chat-communication"],"version":"0.23.1","connection_type":"local","upstream":"https://github.com/m0nkmaster/msteams-mcp"},
-    {"name":"Messages.app MCP Server","topics":["chat-communication"],"version":"2.0.1","connection_type":"local","upstream":"https://github.com/Baphomet480/messages-app-mcp"},
-    {"name":"Google Chat MCP","topics":["chat-communication"],"version":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/nguyenvanduocit/google-chat-mcp"},
-    {"name":"whatsapp-mcp-server","topics":["chat-communication"],"version":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/Jochem-van-Appeldoorn/whatsapp-mcp-server"},
-    {"name":"AutoPentest","topics":["information-security"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/bhavsec/autopentest-ai"},
-    {"name":"Vulnerable MCP Server","topics":["information-security"],"version":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/integsec/VulnerableMCP"},
-    {"name":"Penetration Testing MCP Server","topics":["information-security"],"version":"2.0.0","connection_type":"local","upstream":"https://github.com/Dr-yato/pentest-mcp-server"},
-    {"name":"Report Builder MCP Server","topics":["report-generation"],"version":"1.0.0","connection_type":"remote","upstream":"https://github.com/nathanwolfe2208/mcp"},
-    {"name":"MCP Vulnerability Reporting","topics":["information-security","report-generation"],"version":"0.1.0","connection_type":"local","upstream":"https://github.com/badchars/mcp-vulnerability-reporting"},
-    {"name":"Code Auditor","topics":["code-detection"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/BenAHammond/code-auditor-mcp"},
-    {"name":"Actionlint MCP","topics":["code-detection"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/hongkongkiwi/actionlint-mcp"},
-    {"name":"Code Review MCP — Cursor-first PR reviewer","topics":["code-detection","report-generation"],"version":"1.0.0","connection_type":"local","upstream":"https://github.com/shadabbi/code-review-mcp"}
+    {"name":"Teams MCP Server","topics":["chat-communication"],"version_or_requirement":"0.23.1","connection_type":"local","upstream":"https://github.com/m0nkmaster/msteams-mcp"},
+    {"name":"Messages.app MCP Server","topics":["chat-communication"],"version_or_requirement":"2.0.1","connection_type":"local","upstream":"https://github.com/Baphomet480/messages-app-mcp"},
+    {"name":"Google Chat MCP","topics":["chat-communication"],"version_or_requirement":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/nguyenvanduocit/google-chat-mcp"},
+    {"name":"whatsapp-mcp-server","topics":["chat-communication"],"version_or_requirement":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/Jochem-van-Appeldoorn/whatsapp-mcp-server"},
+    {"name":"AutoPentest","topics":["information-security"],"version_or_requirement":"1.0.0","connection_type":"local","upstream":"https://github.com/bhavsec/autopentest-ai"},
+    {"name":"Vulnerable MCP Server","topics":["information-security"],"version_or_requirement":"1.0.0","connection_type":"hybrid","upstream":"https://github.com/integsec/VulnerableMCP"},
+    {"name":"Penetration Testing MCP Server","topics":["information-security"],"version_or_requirement":"2.0.0","connection_type":"local","upstream":"https://github.com/Dr-yato/pentest-mcp-server"},
+    {"name":"Report Builder MCP Server","topics":["report-generation"],"version_or_requirement":"1.0.0","connection_type":"remote","upstream":"https://github.com/nathanwolfe2208/mcp"},
+    {"name":"MCP Vulnerability Reporting","topics":["information-security","report-generation"],"version_or_requirement":"0.1.0","connection_type":"local","upstream":"https://github.com/badchars/mcp-vulnerability-reporting"},
+    {"name":"Code Auditor","topics":["code-detection"],"version_or_requirement":"1.0.0","connection_type":"local","upstream":"https://github.com/BenAHammond/code-auditor-mcp"},
+    {"name":"Actionlint MCP","topics":["code-detection"],"version_or_requirement":"1.0.0","connection_type":"local","upstream":"https://github.com/hongkongkiwi/actionlint-mcp"},
+    {"name":"Code Review MCP — Cursor-first PR reviewer","topics":["code-detection","report-generation"],"version_or_requirement":"1.0.0","connection_type":"local","upstream":"https://github.com/shadabbi/code-review-mcp"},
+    {"name":"iOS Simulator MCP Server","topics":["ios-simulator"],"version_or_requirement":">=1.3.3","connection_type":"local","upstream":"https://github.com/joshuayoes/ios-simulator-mcp"},
+    {"name":"Mobile MCP","topics":["ios-simulator","android-emulator"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/mobile-next/mobile-mcp"},
+    {"name":"Android-MCP","topics":["android-emulator"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/CursorTouch/Android-MCP"},
+    {"name":"Android MCP Server","topics":["android-emulator"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/martingeidobler/android-mcp-server"},
+    {"name":"Google Threat Intelligence MCP","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/google/mcp-security"},
+    {"name":"OpenCTI MCP Server","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/zxzinn/opencti-mcp"},
+    {"name":"FastMCP Threat Intelligence","topics":["threat-intelligence"],"version_or_requirement":"latest","connection_type":"local","upstream":"https://github.com/4R9UN/fastmcp-threatintel"}
   ]
 }

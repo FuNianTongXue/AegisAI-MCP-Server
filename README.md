@@ -1,12 +1,12 @@
 # AegisAI-MCP Server
 
-> 面向聊天通讯、信息安全、报告生成与代码检测场景的 MCP 服务精选目录。
+> 面向聊天通讯、信息安全、报告生成、代码检测、移动端模拟器与威胁情报场景的 MCP 服务精选目录。
 
-本项目整理与四类工作流高度相关的 MCP 服务，保存服务名称、版本、连接类型、用途摘要、上游仓库链接以及安全审查提示，便于技术选型、部署评估和二次核验。项目不复制第三方代码。
+本项目整理与多类工作流高度相关的 MCP 服务，保存服务名称、版本或版本要求、连接类型、用途摘要、上游仓库链接以及安全审查提示，便于技术选型、部署评估和二次核验。项目不复制第三方代码。
 
 ## 目录范围
 
-本目录覆盖聊天通讯、信息安全、报告生成和代码检测四类场景。服务按照场景相关性与功能覆盖范围组织，不代表任何服务质量认证、商业推荐或安全保证。
+本目录覆盖聊天通讯、信息安全、报告生成、代码检测、iOS 模拟器、Android 模拟器和威胁情报七类场景。服务按照场景相关性与功能覆盖范围组织，不代表任何服务质量认证、商业推荐或安全保证。
 
 | 主题 | 代表性服务 | 适用重点 |
 |---|---|---|
@@ -14,11 +14,14 @@
 | 信息安全 | AutoPentest、Vulnerable MCP Server、Penetration Testing MCP Server | 授权安全测试、实验环境和漏洞评估 |
 | 报告生成 | Report Builder MCP Server、MCP Vulnerability Reporting | 执行摘要、HTML 报告和安全评估报告 |
 | 代码检测 | Code Auditor、Actionlint MCP、Code Review MCP | 代码质量、CI 工作流、PR 审查和安全检测 |
+| iOS 模拟器 | iOS Simulator MCP Server、Mobile MCP | UI 自动化、截图、录屏、应用安装和调试 |
+| Android 模拟器 | Mobile MCP、Android-MCP、Android MCP Server | ADB 自动化、应用操作、截图、录屏和崩溃信息 |
+| 威胁情报 | Google Threat Intelligence MCP、OpenCTI MCP Server、FastMCP Threat Intelligence | IOC、恶意软件、域名、IP、威胁组织和报告查询 |
 
 ## 服务索引
 
-| 服务 | 主题 | 版本 | 连接类型 | 上游仓库 |
-|---|---|---:|---|---|
+| 服务 | 主题 | 版本或要求 | 连接类型 | 上游仓库 |
+|---|---|---|---|---|
 | Teams MCP Server | 聊天通讯 | 0.23.1 | local | [GitHub](https://github.com/m0nkmaster/msteams-mcp) |
 | Messages.app MCP Server | 聊天通讯 | 2.0.1 | local | [GitHub](https://github.com/Baphomet480/messages-app-mcp) |
 | Google Chat MCP | 聊天通讯 | 1.0.0 | hybrid | [GitHub](https://github.com/nguyenvanduocit/google-chat-mcp) |
@@ -31,6 +34,13 @@
 | Code Auditor | 代码检测 | 1.0.0 | local | [GitHub](https://github.com/BenAHammond/code-auditor-mcp) |
 | Actionlint MCP 服务器 | 代码检测 | 1.0.0 | local | [GitHub](https://github.com/hongkongkiwi/actionlint-mcp) |
 | Code Review MCP — Cursor-first PR reviewer | 代码检测 / 报告生成 | 1.0.0 | local | [GitHub](https://github.com/shadabbi/code-review-mcp) |
+| iOS Simulator MCP Server | iOS 模拟器 | >=1.3.3 | local | [GitHub](https://github.com/joshuayoes/ios-simulator-mcp) |
+| Mobile MCP | iOS / Android 模拟器 | latest | local | [GitHub](https://github.com/mobile-next/mobile-mcp) |
+| Android-MCP | Android 模拟器 | latest | local | [GitHub](https://github.com/CursorTouch/Android-MCP) |
+| Android MCP Server | Android 模拟器 | latest | local | [GitHub](https://github.com/martingeidobler/android-mcp-server) |
+| Google Threat Intelligence MCP | 威胁情报 | latest | local | [GitHub](https://github.com/google/mcp-security) |
+| OpenCTI MCP Server | 威胁情报 | latest | local | [GitHub](https://github.com/zxzinn/opencti-mcp) |
+| FastMCP Threat Intelligence | 威胁情报 | latest | local | [GitHub](https://github.com/4R9UN/fastmcp-threatintel) |
 
 ## 选型建议
 
@@ -38,13 +48,17 @@
 
 聊天通讯场景应根据平台约束选择服务。Teams MCP Server 面向 Teams 会话、频道和会议内容；Messages.app MCP Server 面向 macOS Messages；Google Chat MCP 需要 Google OAuth 认证；WhatsApp 服务涉及会话数据和消息内容。部署这些服务时，应优先使用专用账号、最小权限和隔离存储。
 
-报告生成场景中，Report Builder MCP Server 支持邮件模板、HTML 报告、执行摘要、质量校验和品牌化能力。MCP Vulnerability Reporting 专注安全评估报告，但部署前需要检查模板路径、模板内容和报告留存策略。
+移动端自动化方面，iOS Simulator MCP Server 适合直接控制 iOS Simulator 的可访问性树、点击、输入、截图、录屏、应用安装和深链接；Mobile MCP 通过统一接口覆盖 iOS Simulator、Android Emulator 以及真实设备；Android-MCP 和 Android MCP Server 更适合基于 ADB 的 Android 操作。iOS 工具应使用不低于 1.3.3 的版本，以避免项目公告中提到的旧版本命令注入风险；移动自动化服务应使用专用模拟器或测试设备，不要把生产账户、支付信息或个人消息导入测试环境。
+
+威胁情报方面，Google Threat Intelligence MCP 连接 VirusTotal API，可查询威胁集合、恶意软件、文件、域名、IP、URL 和 IOC；OpenCTI MCP Server 面向 OpenCTI 平台，可查询报告、恶意软件、指标、威胁组织以及 STIX 对象；FastMCP Threat Intelligence 可作为自托管威胁情报工作流候选。所有服务都应通过环境变量或密钥管理器保存 API 凭据，不得将令牌写入仓库；对外部 IOC、报告和样本应进行数据分级与访问控制。
 
 ## 安全与合规提示
 
-信息安全和通讯类 MCP 服务可能读取私密消息、凭据、源代码、漏洞数据或本地文件。部署前应审查源码、依赖、许可证、网络访问、日志和数据留存策略；生产环境建议使用专用账号、短期令牌、只读权限、容器隔离和出口控制。渗透测试类服务只能用于获得明确授权的资产；故意包含漏洞的服务只能在隔离实验环境中运行。
+信息安全、威胁情报和通讯类 MCP 服务可能读取私密消息、凭据、源代码、漏洞数据、恶意样本或本地文件。部署前应审查源码、依赖、许可证、网络访问、日志和数据留存策略；生产环境建议使用专用账号、短期令牌、只读权限、容器隔离和出口控制。渗透测试类服务只能用于获得明确授权的资产；故意包含漏洞的服务只能在隔离实验环境中运行。
 
-第三方服务的安装命令、运行参数和权限要求应以其上游仓库当前文档为准。本项目不代替安全测试、代码审计、隐私影响评估或法律合规审查。
+移动模拟器 MCP 可能执行点击、输入、应用安装、深链接打开、录屏和设备控制。应限制设备范围和可访问数据，关闭不必要的外网访问，并避免把真实个人设备、生产证书或敏感凭据暴露给自动化代理。
+
+第三方服务的安装命令、运行参数和权限要求应以其上游仓库当前文档为准。本项目不代替安全测试、代码审计、威胁情报研判、隐私影响评估或法律合规审查。
 
 ## 数据文件
 
